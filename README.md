@@ -1,75 +1,20 @@
-**Polski** | [English](README.en.md)
+🇵🇱 **Polski** | 🇬🇧 [English](README.en.md)
 
-# Wakacyjne wyzwanie 2026: AI/ML
+# 🧠 AI/ML — Wakacyjne Wyzwanie 2026
 
-<div align="center">
-  | <a href="https://www.linkedin.com/events/wakacyjnewyzwanie20267477684591185530880/">👾 LinkedIn</a> | 
-  <a href="https://www.facebook.com/events/1056808610636713/">📘 Facebook</a> |
-</div>
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
 
-<br>
+> 🎓 Ścieżka AI/ML **Wakacyjnego Wyzwania 2026** koła naukowego **KN Solvro** (Politechnika Wrocławska)
 
-## Od zera do ML Engineera!
-Witaj w repozytorium kursu AI/ML! Przygotowaliśmy dla Ciebie intensywną, wakacyjną ścieżkę, która przeprowadzi Cię przez najważniejsze zagadnienia sztucznej inteligencji i uczenia maszynowego, od absolutnych podstaw pracy z danymi, aż po modele językowe.
+Od analizy danych do agentów LLM w jedno lato. 🌞 Moje rozwiązania są na gałęzi [`francesspot-dev`](../../tree/francesspot-dev), a projekt końcowy w osobnym repo — [🧠 Neuromorficzne Widzenie](https://github.com/francesspot/ml-neuromorficzne-widzenie).
 
----
+## 🪜 Moje zadania
 
-## Moje rozwiązania
+| | Temat | Co zrobiłem |
+|---|---|---|
+| 1️⃣ 🚢 | Analiza danych | **EDA zbioru Titanic** — braki danych, wizualizacje, czyszczenie i przygotowanie cech pod model |
+| 2️⃣ 🌳 | Podstawy ML | Przewidywanie przeżycia na Titanicu: model bazowy, **drzewo decyzyjne** i **KNN** z grid searchem, podział danych bez wycieku — **~80% accuracy** (vs 61% modelu bazowego) |
+| 3️⃣ 🖼️ | Wizja komputerowa | Własna sieć **U-Net** w **PyTorchu** do segmentacji semantycznej obrazów (Pascal VOC) |
+| 4️⃣ 🍳 | NLP i agenty | **Agentowy asystent RAG** do przepisów: PDF-y → embeddingi → baza wektorowa Chroma; agent w **LangGraphie** (Gemini) z narzędziami do szukania przepisów i przeliczania porcji, plus automatyczna ocena odpowiedzi (hit rate, MRR, LLM jako sędzia) |
 
-Moje zadania domowe są na gałęzi [`francesspot-dev`](../../tree/francesspot-dev). Gałąź `main` zawiera materiały kursu.
-
-| Tydzień | Notatnik | Co zrobiłem |
-|---------|----------|-------------|
-| 1 | `01_przetwarzanie_wizualizacja_danych/EDA_zadanie.ipynb` | Eksploracyjna analiza zbioru **Titanic**: brakujące wartości, wizualizacje, czyszczenie i przygotowanie danych pod klasyfikator |
-| 2 | `02_podstawy_aiml/ML_zadanie.ipynb` | Przewidywanie przeżycia na Titanicu: podział na zbiór treningowy i testowy przed jakimkolwiek przetwarzaniem (bez wycieku danych), model bazowy `DummyClassifier`, **drzewo decyzyjne** i **KNN** dostrojone grid searchem — ok. 79–82% accuracy na zbiorze testowym wobec 61% dla modelu bazowego |
-| 3 | `03_sieci_neuronowe_wizja_komputerowa/03_computer_vision_hw.ipynb` | Budowa i trening sieci **U-Net** w PyTorchu do segmentacji semantycznej na zbiorze Pascal VOC, z wizualizacją przewidzianych masek |
-| 4 | `04_nlp_agenty/zad_agent.ipynb` | **Agentowy asystent RAG** do przepisów kulinarnych: PDF-y → chunki → embeddingi z HuggingFace → Chroma; agent w LangGraphie (Gemini) z dwoma narzędziami — wyszukiwaniem przepisów i przeliczaniem porcji — oraz automatyczną oceną retrievera (hit rate, MRR) i „sędzią" LLM sprawdzającym trafność i wierność odpowiedzi |
-
-Notatniki były uruchamiane w Google Colab.
-
----
-
-## Forma i struktura kursu
-Spotykamy się co tydzień na **Discordzie**. Każdy tydzień to nowy temat i nowe wyzwania.
-
-Cykl tygodniowy składa się z trzech głównych elementów:
-- **Wykłady na discordzie (1h):** Krótkie i treściwe spotkania (maksymalnie godzina, wliczając Q&A). Zapewniają solidne wprowadzenie do tematu od podstaw, omawiają najważniejsze zagadnienia.
-- **Notebook wprowadzający:** Praktyczny materiał krok po kroku. Wprowadza w tematykę poruszaną na wykładzie i daje Ci gotowe narzędzia niezbędne do rozwiązania zadania domowego.
-- **Zadanie tygodniowe:** Twój główny cel na dany tydzień. Otrzymasz notebooka z jasnymi wymaganiami i odnośnikami. Oprócz pisania kodu, znajdziesz tam pytania sprawdzające zrozumienie przerabianego tematu.
-
-> Prezentacje z wykładów jak i notebooki będą się pojawiać w dniu danego wykładu (po wykładzie).
-
----
-
-## Grupy i sprawdzanie zadań
-Każdy uczestnik będzie miał swój dedykowany protected branch w repozytorium.
-
-Jako iż cenimy sobie wymianę wiedzy i wzajemną pomoc:
-- **Małe grupy robocze:** Zostaniecie co tydzień podzieleni losowo na mniejsze zespoły
-- **Cross-review:** Zadania sprawdzamy sobie nawzajem. To najlepszy sposób, aby uczyć się na błędach (swoich i cudzych) oraz poznawać inne podejścia do tego samego problemu.
-- **Dyskusja:** Weryfikacja to także przestrzeń do przegadania tego, co nie poszło w zadaniach oraz wspólnego odpowiedzenia na pytania pomocnicze.
-
-> PS: Koordynatorzy wam też sprawdzą zadanie, ale cross-review jest także składową do zdania kursu :P.
-
---- 
-
-## Projekt końcowy
-Zwieńczeniem wakacyjnego wyzwania jest projekt praktyczny:
-
-- **Zespoły:** Praca odbywa się w grupach **2-4 osobowych** (z naciskiem na 4 osoby).
-- **Tematyka:** Pełna dowolność! Każdy uczestnik może zaproponować temat koordynatorom z którym chciałby współpracować ale także, my jako koordynatorzy zaproponujemy wam nasze propozycje tematów na projekt.
-- **Zakres:** Projekt może poszerzać materiał z kursu lub opierać się na implementacji artykułów naukowych.
-
----
-
-## Harmonogram i rozkład lekcji
-
-| Lp. | Temat |  Data | Koordynator |
-| :--- | :--- | :--- | :--- |
-| **0** | **Setup środowiska** (bez spotkania, notebook) |  01.08 | Dominik |
-| **1** | **Przetwarzanie i wizualizacja danych** |  05.08 | Julia, Grzegorz |
-| **2** | **Podstawy AI/ML** |  12.08 | Dominik, Damian, Jan |
-| **3** | **Sieci neuronowe i przetwarzanie obrazów** |  19.08 | Marcel, Paweł |
-| **4** | **NLP** | 26.08 | Jakub, Kamil, Aleksandra |
-| **5-7** | **Projekty Końcowe**  | 7/14/21.09 | Dominik, Jakub |
-| **8** | **Podsumowanie Kursu**  | 28.09 | Wszyscy |
+Notatniki uruchamiałem w Google Colab. Gałąź `main` zawiera materiały z kursu.
