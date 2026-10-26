@@ -1,3 +1,5 @@
+**Polski** | [English](README.en.md)
+
 # Wakacyjne wyzwanie 2026: AI/ML
 
 <div align="center">
@@ -9,6 +11,21 @@
 
 ## Od zera do ML Engineera!
 Witaj w repozytorium kursu AI/ML! Przygotowaliśmy dla Ciebie intensywną, wakacyjną ścieżkę, która przeprowadzi Cię przez najważniejsze zagadnienia sztucznej inteligencji i uczenia maszynowego, od absolutnych podstaw pracy z danymi, aż po modele językowe.
+
+---
+
+## Moje rozwiązania
+
+Moje zadania domowe są na gałęzi [`francesspot-dev`](../../tree/francesspot-dev). Gałąź `main` zawiera materiały kursu.
+
+| Tydzień | Notatnik | Co zrobiłem |
+|---------|----------|-------------|
+| 1 | `01_przetwarzanie_wizualizacja_danych/EDA_zadanie.ipynb` | Eksploracyjna analiza zbioru **Titanic**: brakujące wartości, wizualizacje, czyszczenie i przygotowanie danych pod klasyfikator |
+| 2 | `02_podstawy_aiml/ML_zadanie.ipynb` | Przewidywanie przeżycia na Titanicu: podział na zbiór treningowy i testowy przed jakimkolwiek przetwarzaniem (bez wycieku danych), model bazowy `DummyClassifier`, **drzewo decyzyjne** i **KNN** dostrojone grid searchem — ok. 79–82% accuracy na zbiorze testowym wobec 61% dla modelu bazowego |
+| 3 | `03_sieci_neuronowe_wizja_komputerowa/03_computer_vision_hw.ipynb` | Budowa i trening sieci **U-Net** w PyTorchu do segmentacji semantycznej na zbiorze Pascal VOC, z wizualizacją przewidzianych masek |
+| 4 | `04_nlp_agenty/zad_agent.ipynb` | **Agentowy asystent RAG** do przepisów kulinarnych: PDF-y → chunki → embeddingi z HuggingFace → Chroma; agent w LangGraphie (Gemini) z dwoma narzędziami — wyszukiwaniem przepisów i przeliczaniem porcji — oraz automatyczną oceną retrievera (hit rate, MRR) i „sędzią" LLM sprawdzającym trafność i wierność odpowiedzi |
+
+Notatniki były uruchamiane w Google Colab.
 
 ---
 
